@@ -63,4 +63,24 @@
 		return (string) filter_var($value, FILTER_SANITIZE_EMAIL);
 	}
 
+	// Remove Special characters
+	function sz_special ($value)
+	{
+	    // Allow letters, numbers, and spaces in any language
+	    $value = preg_replace('/[^\p{L}\p{N}\s]/u', '', $value);
+	    $value = trim($value);
+
+	    return $value;
+	}	
+
+	// Remove Special characters and spaces
+	function sz_special_s ($value)
+	{
+	    // Allow letters, numbers in any language
+	    $value = preg_replace('/[^\p{L}\p{N}]/u', '', $value);
+	    $value = trim($value);
+
+	    return $value;
+	}
+
 ?>

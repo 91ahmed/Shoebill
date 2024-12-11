@@ -70,6 +70,35 @@
 		return (string) trim($url, '/');
 	}
 
+	function request ($value)
+	{
+		if (isset($_REQUEST[$value]))
+		{
+			if (is_array($_REQUEST[$value])) {
+				$arr = [];
+
+				if (!empty($_REQUEST[$value])) {
+					foreach ($_REQUEST[$value] as $v) {
+						array_push($arr, trim($v));
+					}
+				}
+
+				return $arr;
+			} else {
+				return trim($_REQUEST[$value]);
+			}
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+	function is_request (string $value) 
+	{
+		return isset($_REQUEST[$value]);
+	}
+
 	function delete_dir (string $dirPath) 
 	{
 	    if (! is_dir($dirPath)) {
