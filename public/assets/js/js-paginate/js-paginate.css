@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.__pgs_btn{
+	font-family: "Poppins", sans-serif;
+	display: inline-block;
+	background-color: #ffffff;
+	border: 1px solid #f2f2f2;
+	outline: none;
+	box-shadow: none;
+	font-size: 13px;
+	cursor: pointer;
+	padding: 8px 10px;
+	margin: -1px;
+}
+.__pgs_select:hover,
+.__pgs_select:focus,
+.__pgs_select:active,
+.__pgs_select{
+	font-family: "Poppins", sans-serif;
+    display: inline-block;
+    height: 38px;
+    border: 1px solid #f2f2f2;
+    margin: -1px;
+    padding: 0 20px;
+	outline: none;
+	box-shadow: none;
+	font-size: 13px;
+	text-align: center;
+	cursor: pointer;
+
+	/* Remove the arrow */
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	text-indent: 1px;
+	text-overflow: '';
+}
+/* Remove the arrow */
+.__pgs_select::-ms-expand {
+    display: none;
+}
+
+
+
+.__pgs_text{
+	font-family: "Poppins", sans-serif;
+	padding: 0;
+	margin: 10px 0;
+    font-size: 13px;
+    font-weight: 400;
+    color: #393939;
+    word-spacing: 1px;
+}

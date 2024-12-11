@@ -5,6 +5,7 @@
 	define('DIR', 'shoebill-framework');
 	define('ROOT', __DIR__);
 	define('DS', DIRECTORY_SEPARATOR);
+	define('LANGUAGE', 'en');
 
 	// Set the database configurations
 	define ('DB_DRIVER',   'mysql');

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Test</title>
+		<link rel="stylesheet" href="js-paginate.css">
+		<style>
+			body{
+				background-color: #f1f2f6;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="_pgs" data-pages="34" data-current="1"></div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="js-paginate.js"></script>
+
+		<script>
+			_pgdown({
+				id: '_pgs',
+			})
+		</script>
+	</body>
+</html>
